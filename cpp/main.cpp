@@ -20,7 +20,6 @@ int main() {
     values[i]=rand()%100;  //Generate number between 0 to 99
 
 
-  malloc_stats();
   auto t0 = high_resolution_clock::now(); 
 
   for(int i=0; i < N; i++)
