@@ -4,7 +4,6 @@
 #include<vector> 
 #include <malloc.h>
 
-
 using namespace std; 
 using namespace std::chrono; 
   
@@ -12,26 +11,38 @@ using namespace std::chrono;
 
 int main() {
 
+  uint8_t *m0 = new uint8_t;
 
-  int values[N];
+  uint8_t *values = new uint8_t[N];
 
   // Generate Random values 
   for(int i=0; i < N; i++)
-    values[i]=rand()%100;  //Generate number between 0 to 99
+    *(i+values)=rand()%100;  //Generate number between 0 to 99
 
 
-  auto t0 = high_resolution_clock::now(); 
-
-  for(int i=0; i < N; i++)
-    if(values[i] == -1)
-        break;
-    
+  auto t0 = duration_cast <milliseconds> (system_clock::now().time_since_epoch());
   
-  auto t1 = high_resolution_clock::now();   
+  
+  //----------- algorithmo -------
+  int index;
+  for(index=0; index < N; index++)
+    if(*(index+values) == -1)
+        break;
+  
+  //-----------------------------
 
-  auto duration = duration_cast<microseconds>(t1 - t0); 
+  
+  auto t1 = duration_cast <milliseconds> (system_clock::now().time_since_epoch());  
+  auto duration = t1 - t0; 
 
-  cout << "Time : " << duration.count() << " microseconds" << endl; 
+  uint8_t *m1 = new uint8_t;
+
+  cout << "\nTime:\t" << duration.count() << "\t\tmicroseconds" << endl; 
+  cout << "Memory:\t" << (m1 - m0) << "\tbytes"<< endl;
+
+  delete[] values;
+  delete m0;
+  delete m1;
 
   return 0;
 }
