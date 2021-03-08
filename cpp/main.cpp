@@ -2,7 +2,6 @@
 #include <chrono> 
 #include <iostream> 
 #include<vector> 
-#include <malloc.h>
 
 using namespace std; 
 using namespace std::chrono; 

@@ -1,26 +1,37 @@
-#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
-#define N 100000
+#include <time.h>
+
+#define N 500000
+
 int main() {
-    clock_t t; 
-    t = clock(); 
 
-    int values[N];
+    struct timespec t0, t1;
 
-    // Generate Random values 
+    int *m0 = (int *) malloc(sizeof(int));
+
+    int *values = (int *) malloc(N * sizeof(int));
+
+    // Generate Random values
     for(int i=0; i < N; i++)
-        values[i]=rand()%100;  //Generate number between 0 to 99
+        *(i+values)=rand()%100;
 
-
-    for(int i=0; i < N; i++)
-        if(values[i] == -1)
+    clock_gettime(CLOCK_MONOTONIC_RAW, &t0);
+    //----------- algorithmo -------
+    for(int index=0; index < N; index++)
+        if(*(index+values) == -1)
             break;
-    t = clock() - t; 
+    //-----------------------------
+    clock_gettime(CLOCK_MONOTONIC_RAW, &t1);
 
-    double time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds
+    int *m1 = (int *) malloc(sizeof(int));
 
-    printf("Time: %f", time_taken);
-    //cout << "Time : " << duration.count() << " microseconds" << endl; 
-    return 0; 
+    printf("Time: %ld milliseconds\n", (t1.tv_nsec - t0.tv_nsec) / 1000000 + (t1.tv_sec - t0.tv_sec));
+    printf("Memory: %ld Bytes\n", (m1-m0) + (N/4));
+
+    free(values);
+    free(m0);
+    free(m1);
+
+    return 0;
 }
