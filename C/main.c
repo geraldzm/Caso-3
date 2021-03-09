@@ -22,7 +22,7 @@ int main() {
         if(*(index+values) == -1)
             break;
     //-----------------------------
-    clock_gettime(CLOCK_MONOTONIC, &t1);
+    clock_gettime(CLOCK_MONOTONIC_RAW, &t1);
 
     int *m1 = (int *) malloc(sizeof(int));
 
