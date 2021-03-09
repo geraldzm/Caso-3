@@ -10,9 +10,9 @@ using namespace std::chrono;
 
 int main() {
 
-  uint8_t *m0 = new uint8_t;
+  int *m0 = new int;
 
-  uint8_t *values = new uint8_t[N];
+  int *values = new int[N];
 
   // Generate Random values 
   for(int i=0; i < N; i++)
@@ -34,10 +34,10 @@ int main() {
   auto t1 = duration_cast <milliseconds> (system_clock::now().time_since_epoch());  
   auto duration = t1 - t0; 
 
-  uint8_t *m1 = new uint8_t;
+  int *m1 = new int;
 
   cout << "\nTime:\t" << duration.count() << "\t\tmicroseconds" << endl; 
-  cout << "Memory:\t" << (m1 - m0) << "\tbytes"<< endl;
+  cout << "Memory:\t" << ((m1 - m0)+ 4*N) << "\tbytes"<< endl;
 
   delete[] values;
   delete m0;

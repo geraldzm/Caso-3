@@ -16,7 +16,7 @@ int main() {
     for(int i=0; i < N; i++)
         *(i+values)=rand()%100;
 
-    clock_gettime(CLOCK_MONOTONIC_RAW, &t0);
+    clock_gettime(CLOCK_MONOTONIC_RAW, &t0); // gcc version 9.3.0 -> CLOCK_MONOTONIC_RAW |  gcc version 8.1.0 -> CLOCK_MONOTONIC
     //----------- algorithmo -------
     for(int index=0; index < N; index++)
         if(*(index+values) == -1)
