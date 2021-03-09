@@ -1,2 +1,163 @@
-# Caso-3
-Caso 3 Análisis de datos, tarea Tec
+# Análisis de datos, Caso 3!
+
+Authors:
+  Gerald Zamora Morales (@geraldzm) 2020053672
+  Kelvin Nuñez Barrantes (@Vynidaulkel) 2019046494
+
+Tercera tarea del curso de análisis de algoritmos, donde se compara el rendimiento en tiempo y memoria de C, C++, Go y Rust, en una búsqueda secuencial ordinaria.
+### Descripción de la computadora: ###
+Procesador: 
+Memoria principal: 
+Otros
+
+# Tests
+
+<table >
+	<caption>Comparación de los lenguajes</caption>
+	<col>  
+	<colgroup  span="2"></colgroup>  <colgroup  span="2"></colgroup>
+	<tr>
+		<td  rowspan="2">Elements in array</td>
+		<th colspan="2" >C</th>
+		<th colspan="2" >C++</th>
+		<th colspan="2" >Go</th>
+		<th colspan="2">Rust</th>
+	</tr>
+	<tr>
+		<th>Time ms</th> 
+		<th>Memory bytes</th>
+		 <th>Time ms</th>
+		 <th>Memory bytes</th>
+		  <th>Time ms</th>
+		 <th>Memory bytes</th>
+		  <th>Time ms</th>
+		 <th>Memory bytes</th>
+	</tr>
+	<tr>
+		<td>500,000</td>
+		<td>0</td>
+		<td>2,000,008</td>
+		<td>0.8</td>
+		<td>2,000,008</td>
+		<td>0.8</td>
+		<td>4,005,888</td>
+		<td>12.4</td>
+		<td>2,000,204</td>
+	</tr>
+		<tr>
+		<td>1,000,000</td>
+		<td>1.2</td>
+		<td>4,000,008</td>
+		<td>2.5</td>
+		<td>4,000,008</td>
+		<td>1</td>
+		<td>7,991,700</td>
+		<td>30</td>
+		<td>4,000,200</td>
+	</tr>
+	</tr>
+		<tr>
+		<td>1,500,000</td>
+		<td>2</td>
+		<td>6,000,008</td>
+		<td>3.2</td>
+		<td>6,000,008</td>
+		<td>2.4</td>
+		<td>11,980,000</td>
+		<td>36.8</td>
+		<td>6,000,400</td>
+	</tr>
+	</tr>
+		<tr>
+		<td>2,000,000</td>
+		<td>3</td>
+		<td>8,000,008</td>
+		<td>4</td>
+		<td>8,000,008</td>
+		<td>1.4</td>
+		<td>15,950,500</td>
+		<td>63.4</td>
+		<td>8,000,200</td>
+	</tr>
+	</tr>
+		<tr>
+		<td>2,500,000</td>
+		<td>4</td>
+		<td>10,000,008</td>
+		<td>5</td>
+		<td>10,000,008</td>
+		<td>2.8</td>
+		<td>19,993,000</td>
+		<td>77.4</td>
+		<td>10,000,200</td>
+	</tr>
+	</tr>
+		<tr>
+		<td>3,000,000</td>
+		<td>5</td>
+		<td>12,000,008</td>
+		<td>5.6</td>
+		<td>12,000,008</td>
+		<td>3.4</td>
+		<td>23,991,000</td>
+		<td>92.6</td>
+		<td>12,000,100</td>
+	</tr>
+</table>
+
+
+## Corridas ##
+Para cada prueba se corre el algoritmo cinco veces y se toma el promedio del tiempo y memoria
+### C ###
+Con 500,000 elementos
+![alt home]( https://i.imgur.com/yZg5E8M.png )
+Con 1,000,000 elementos
+![alt home]( https://i.imgur.com/xUODVkG.png )
+Con 1,500,000 elementos
+![alt home]( https://i.imgur.com/vRLRMgV.png)
+Con 2,000,000 elementos
+![alt home]( https://i.imgur.com/G3VVjqw.png )
+Con 2,500,000 elementos
+![alt home]( https://i.imgur.com/Bllllup.png )
+Con 3,000,000 elementos
+![alt home]( https://i.imgur.com/zMwHDvU.png )
+
+### C++ ###
+Con 500,000 elementos
+![alt home]( https://i.imgur.com/Cq0feEy.png  )
+Con 1,000,000 elementos
+![alt home]( https://i.imgur.com/EW6fv6v.png )
+Con 1,500,000 elementos
+![alt home]( https://i.imgur.com/6PxrPSx.png )
+Con 2,000,000 elementos
+![alt home]( https://i.imgur.com/ywi0BTR.png )
+Con 2,500,000 elementos
+![alt home]( https://i.imgur.com/P6rZOaO.png )
+Con 3,000,000 elementos
+![alt home]( https://i.imgur.com/xsXABM5.png )
+
+### GO ###
+Con 500,000 elementos
+![alt home](  )
+Con 1,000,000 elementos
+![alt home](  )
+Con 1,500,000 elementos
+![alt home](  )
+Con 2,000,000 elementos
+![alt home](  )
+Con 2,500,000 elementos
+![alt home](  )
+Con 3,000,000 elementos
+
+### Rust ###
+Con 500,000 elementos
+![alt home](  )
+Con 1,000,000 elementos
+![alt home](  )
+Con 1,500,000 elementos
+![alt home](  )
+Con 2,000,000 elementos
+![alt home](  )
+Con 2,500,000 elementos
+![alt home](  )
+Con 3,000,000 elementos
