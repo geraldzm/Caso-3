@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define N 500000
+#define N 100000
 
 int main() {
 
@@ -22,12 +22,12 @@ int main() {
         if(*(index+values) == -1)
             break;
     //-----------------------------
-    clock_gettime(CLOCK_MONOTONIC_RAW, &t1);
+    clock_gettime(CLOCK_MONOTONIC, &t1);
 
     int *m1 = (int *) malloc(sizeof(int));
 
     printf("Time: %ld milliseconds\n", (t1.tv_nsec - t0.tv_nsec) / 1000000 + (t1.tv_sec - t0.tv_sec));
-    printf("Memory: %ld Bytes\n", (m1-m0) + (N/4));
+    printf("Memory: %ld Bytes\n", (m1-m0) + (N*4));
 
     free(values);
     free(m0);
