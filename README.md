@@ -6,8 +6,10 @@ Authors:
 
 Tercera tarea del curso de análisis de algoritmos, donde se compara el rendimiento en tiempo y memoria de C, C++, Go y Rust, en una búsqueda secuencial ordinaria.
 ### Descripción de la computadora: ###
-Procesador: 
-Memoria principal: 
+Procesador: Intel Core i3-6100 3.7GHz Dual-Core Processor
+Memoria principal: Corsair ValueSelect 8 GB DDR4-2666 CL18 Memory
+Placa Madre: Gigabyte GA-H110M-H Micro ATX LGA1151 Motherboard
+Tarjeta de video: MSI Radeon RX 470 4 GB GAMING X Video Card
 Otros
 
 # Tests
@@ -138,26 +140,28 @@ Con 3,000,000 elementos
 
 ### GO ###
 Con 500,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/Tg9XAQU.png )
 Con 1,000,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/hT6EN1E.png )
 Con 1,500,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/YRJZX35.png )
 Con 2,000,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/sJAX4jp.png )
 Con 2,500,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/GscTBLr.png )
 Con 3,000,000 elementos
+![alt home]( https://imgur.com/a/nO7wY5X.png )
 
 ### Rust ###
 Con 500,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/XbXQhzH.png )
 Con 1,000,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/j2BkF0J.png )
 Con 1,500,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/xBkZMWc.png )
 Con 2,000,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/0SYEwUk.png )
 Con 2,500,000 elementos
-![alt home](  )
+![alt home]( https://imgur.com/a/6XlakoV.png )
 Con 3,000,000 elementos
+![alt home]( https://imgur.com/a/IbFynQE.png )
