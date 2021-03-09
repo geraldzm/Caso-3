@@ -140,28 +140,28 @@ Con 3,000,000 elementos
 
 ### GO ###
 Con 500,000 elementos
-![alt home]( https://imgur.com/a/Tg9XAQU.png )
+![alt home]( https://i.imgur.com/ZVBrDjN.png )
 Con 1,000,000 elementos
-![alt home]( https://imgur.com/a/hT6EN1E.png )
+![alt home]( https://i.imgur.com/QDRHUyz.png )
 Con 1,500,000 elementos
-![alt home]( https://imgur.com/a/YRJZX35.png )
+![alt home]( https://i.imgur.com/eZ2zY72.png )
 Con 2,000,000 elementos
-![alt home]( https://imgur.com/a/sJAX4jp.png )
+![alt home]( https://i.imgur.com/fGtElDy.png )
 Con 2,500,000 elementos
-![alt home]( https://imgur.com/a/GscTBLr.png )
+![alt home]( https://i.imgur.com/48fv1nK.png )
 Con 3,000,000 elementos
-![alt home]( https://imgur.com/a/nO7wY5X.png )
+![alt home]( https://i.imgur.com/HFcxh5c.png )
 
 ### Rust ###
 Con 500,000 elementos
-![alt home]( https://imgur.com/a/XbXQhzH.png )
+![alt home]( https://i.imgur.com/FAliH3E.png )
 Con 1,000,000 elementos
-![alt home]( https://imgur.com/a/j2BkF0J.png )
+![alt home]( https://i.imgur.com/IJ4PHwo.png )
 Con 1,500,000 elementos
-![alt home]( https://imgur.com/a/xBkZMWc.png )
+![alt home]( https://i.imgur.com/LaRZYlX.png )
 Con 2,000,000 elementos
-![alt home]( https://imgur.com/a/0SYEwUk.png )
+![alt home]( https://i.imgur.com/ioSxRW1.png )
 Con 2,500,000 elementos
-![alt home]( https://imgur.com/a/6XlakoV.png )
+![alt home]( https://i.imgur.com/9GFc0qV.png )
 Con 3,000,000 elementos
-![alt home]( https://imgur.com/a/IbFynQE.png )
+![alt home]( https://i.imgur.com/YarEVxg.png )
